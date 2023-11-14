@@ -4,30 +4,30 @@ A JAX implementation of the algorithm and calculations described in [Forward Lap
 
 ## Installation
 
-To install LapNet together with all the dependencies (excluding JAX & LapJAX), go to the downloaded directory and run
+To install LapNet together with all the dependencies, you need to have JAX and LapJAX preinstalled.
 
-```shell
-pip install -e .
-```
-
-The LapNet's implementation relies on LapJAX, which supports the Forward Laplacian algorithm. One can install it through the following command:
-
-```
-git clone https://github.com/YWolfeee/lapjax.git
-pip install ./lapjax
-```
-
-If you have a GPU available, then you can
-install JAX with CUDA support, using e.g.:
+JAX can be installed by `pip install jax`. 
+To install JAX with CUDA support, use e.g.:
 
 ```shell
 pip3 install --upgrade jax[cuda]==0.3.24 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 ```
 
-Note that the jaxlib version must correspond to the existing CUDA installation
-you wish to use. Please see the
+Note that the jaxlib version must be compatible to the CUDA version
+you use. Please see the
 [JAX documentation](https://github.com/google/jax#installation) for more
 details.
+
+[LapJAX](https://github.com/YWolfeee/lapjax) is a efficient laplacian computation package described in our paper. It can be installed via:
+
+```
+git clone https://github.com/YWolfeee/lapjax.git
+pip install ./lapjax
+```
+Once you have install both packages, go to the `lapnet` directory and run
+```shell
+pip install -e .
+```
 
 
 ## Usage

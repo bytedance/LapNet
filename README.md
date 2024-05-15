@@ -1,6 +1,6 @@
 # LapNet
 
-A JAX implementation of the algorithm and calculations described in [Forward Laplacian: A New Computational Framework for Neural Network-based Variational Monte Carlo](https://arxiv.org/abs/2307.08214). 
+A JAX implementation of the algorithm and calculations described in [A Computational Framework for Neural Network-based Variational Monte Carlo with Forward Laplacian](https://www.nature.com/articles/s42256-024-00794-x). 
 
 ## Installation
 
@@ -80,10 +80,17 @@ The results directory contains the checkpoints generated during training and `tr
 If you find this repo useful, please cite our paper:
 
 ```
-@article{li2023forward,
-  title={Forward Laplacian: A New Computational Framework for Neural Network-based Variational Monte Carlo},
-  author={Li, Ruichen and Ye, Haotian and Jiang, Du and Wen, Xuelan and Wang, Chuwei and Li, Zhe and Li, Xiang and He, Di and Chen, Ji and Ren, Weiluo and Wang, Liwei},
-  journal={arXiv preprint arXiv:2307.08214},
-  year={2023}
+@article{li_computational_2024,
+	title = {A computational framework for neural network-based variational {Monte} {Carlo} with {Forward} {Laplacian}},
+	volume = {6},
+	issn = {2522-5839},
+	url = {https://doi.org/10.1038/s42256-024-00794-x},
+	doi = {10.1038/s42256-024-00794-x},
+	number = {2},
+	journal = {Nature Machine Intelligence},
+	author = {Li, Ruichen and Ye, Haotian and Jiang, Du and Wen, Xuelan and Wang, Chuwei and Li, Zhe and Li, Xiang and He, Di and Chen, Ji and Ren, Weiluo and Wang, Liwei},
+	month = feb,
+	year = {2024},
+	pages = {209--219},
 }
 ```

@@ -51,7 +51,7 @@ python3 main.py --config lapnet/configs/benzene_dimer/benzene_dimer.py:4.95 --co
 
 There are some configuration files that contain multiple configurations. For example, `ferminet_systems_configs.py` contains multiple configurations used in the original ferminet paper. To choose a specific configuration, you need to specify the configuration through `config.system.molecule_name`. For example, to choose the configuration of CH4, one should use:
 ```
-python3 main.py --config lapnet/configs/ferminet_systems.py --config.system.molecule_name CH4
+python3 main.py --config lapnet/configs/ferminet_systems_configs.py --config.system.molecule_name CH4
 ```
 For the other config files with multiple configurations, one can check in that configuration file about how to specify different configurations in a command.
 
